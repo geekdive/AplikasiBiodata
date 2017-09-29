@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="id.co.decoded.moeslim.meet060917.mainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Biodata:"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Lengkap" />
+
+            <EditText
+                android:id="@+id/txtAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat" />
+
+            <EditText
+                android:id="@+id/txtTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telpon"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height   ="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txtTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal Lahir"
+                android:inputType="date" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jurusan"/>
+
+                <RadioButton
+                    android:id="@+id/idRPL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Rekayasa Perangkat Lunak"/>
+
+                <RadioButton
+                    android:id="@+id/idTKJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Tekni Komputer dan Jaringan"/>
+
+                <RadioButton
+                    android:id="@+id/idAP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Administrasi Perkantorann"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/btnTampilkan"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="View"/>
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/btnKirimIntent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kirim (Intent)"/>
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/btnKirimBundle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kirim (Bundle)"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
